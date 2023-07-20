@@ -1,0 +1,15 @@
+#page-content {
+  blockquote {
+    p {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      background-color: rgba($color: #333, $alpha: 0.5);
+      color: rgba($color: #ffffff, $alpha: 0.3);
+      margin-bottom: 1rem;
+      font-size: 0.9em;
+    }
+  }
+  li {
+    list-style-type: '✨';
+    list-style-position: inside;
+  }
+}
