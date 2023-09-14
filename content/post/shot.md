@@ -26,12 +26,12 @@ paru -S grim slurp
 ```
 $ShiftMod = SUPER_SHIFT
 $Shift = SHIFT
-$ALT = ALT
+$Alt = ALT
 $screen_file=${HOME}/Pictures/Screenshots/screen_shot_$(date +%Y-%m-%d_%H-%M-%S).png
 bind=$ShiftMod, S, exec, grim -g "$(slurp)" - | wl-copy
 bind=,Print, exec, grim $screen_file
-bind=$SHIFT, Print, exec, grim -g "$(slurp)" $screen_file
-bind=$ALT, Print, exec, grim - | wl-copy
+bind=$Shift, Print, exec, grim -g "$(slurp)" $screen_file
+bind=$Alt, Print, exec, grim - | wl-copy
 ```
 
 如果需要把截图文件保存到其他的地方可以修改`$screen_file`的值。
